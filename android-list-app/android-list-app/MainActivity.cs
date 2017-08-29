@@ -21,13 +21,13 @@ namespace android_list_app
         {
             base.OnCreate(bundle);
 
-            // sampleList = SampleListFile.LoadList();
+             sampleList = SampleListFile.LoadList();
 
             /*sampleList[0].id = 0;
             sampleList[0].name = "name1";
             sampleList[0].text1 = "text1";*/
-            sampleList.Add(s0);
-            sampleList.Add(s1);
+            //sampleList.Add(s0);
+           // sampleList.Add(s1);
             
 
             // Set our view from the "main" layout resource
