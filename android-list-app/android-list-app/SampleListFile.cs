@@ -54,6 +54,7 @@ namespace android_list_app
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
                 Toast.MakeText(Application.Context, "Error loading file", ToastLength.Long).Show();
             }
+            L1.Reverse();
             return L1;
             
         }
