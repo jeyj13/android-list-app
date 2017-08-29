@@ -14,17 +14,19 @@ namespace android_list_app
     {
         private List<Sample> sampleList = new List<Sample>();
         private ListView listView1;
-        private Sample s1 = new Sample(1, "name", "text");
-        
+        private Sample s0 = new Sample(0, "name", "text");
+        private Sample s1 = new Sample(1, "name1", "text1");
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            
+
             // sampleList = SampleListFile.LoadList();
-            
+
             /*sampleList[0].id = 0;
             sampleList[0].name = "name1";
             sampleList[0].text1 = "text1";*/
+            sampleList.Add(s0);
             sampleList.Add(s1);
             
 
