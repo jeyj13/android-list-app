@@ -10,7 +10,6 @@
         android:layout_width="0px"
         android:layout_weight="70"
         android:textSize="20dp"
-        android:layout_centerVertical="true"
         android:text="txtName" />
     <TextView
         android:id="@+id/txtText1"

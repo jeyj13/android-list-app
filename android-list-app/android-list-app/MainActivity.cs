@@ -21,7 +21,7 @@ namespace android_list_app
         {
             base.OnCreate(bundle);
 
-             sampleList = SampleListFile.LoadList();
+             sampleList = SampleListFile.LoadList(this);
 
             /*sampleList[0].id = 0;
             sampleList[0].name = "name1";
