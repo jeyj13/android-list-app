@@ -38,6 +38,7 @@ namespace android_list_app
                 view = _appContext.LayoutInflater.Inflate(Resource.Layout.sample_row, parent, false);
             }
             view.FindViewById<TextView>(Resource.Id.txtName).Text = item.name;
+            view.FindViewById<TextView>(Resource.Id.txtText1).Text = item.text1;
            // var nameClick = view.FindViewById<TextView>(Resource.Id.txtName);
             return view;
 
