@@ -32,7 +32,7 @@ namespace android_list_app
                         {
                             var linein = filein.ReadLine();
                             var item = linein.Split(',');
-                            L1.Insert(0, new Sample() {/*id= Convert.ToInt32(item[0]),*/ name = item[1], text1 = item[2]});
+                            L1.Insert(0, new Sample() {id= Convert.ToInt32(item[0]), name = item[1], text1 = item[2]});
                         }
                     }
                 }
@@ -40,6 +40,8 @@ namespace android_list_app
                 {
                     using (StreamWriter fileout = new StreamWriter(File.Create(combinedpath))) {
                         fileout.WriteLine("0,sample,randomfillertext");
+                        fileout.WriteLine("1,sample1,additionaltext");
+                        fileout.WriteLine("2,sample2,evenmoretext");
                     }
                 }
             } catch (Exception ex)
