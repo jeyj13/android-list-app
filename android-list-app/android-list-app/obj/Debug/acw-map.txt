@@ -1,0 +1,8 @@
+android_list_app.MainActivity, android-list-app;md5fef9a6efaa596f8f62d92b8822a2ba02.MainActivity
+android_list_app.MainActivity, android-list-app, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fef9a6efaa596f8f62d92b8822a2ba02.MainActivity
+android_list_app.MainActivity;md5fef9a6efaa596f8f62d92b8822a2ba02.MainActivity
+android_list_app.MainActivity;md5fef9a6efaa596f8f62d92b8822a2ba02.MainActivity
+android_list_app.sample_adapter, android-list-app;md5fef9a6efaa596f8f62d92b8822a2ba02.sample_adapter
+android_list_app.sample_adapter, android-list-app, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5fef9a6efaa596f8f62d92b8822a2ba02.sample_adapter
+android_list_app.sample_adapter;md5fef9a6efaa596f8f62d92b8822a2ba02.sample_adapter
+android_list_app.sample_adapter;md5fef9a6efaa596f8f62d92b8822a2ba02.sample_adapter
