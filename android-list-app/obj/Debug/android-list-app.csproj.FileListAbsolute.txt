@@ -1,0 +1,17 @@
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\android-list-app.dll
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\android-list-app.pdb
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\android_list_app.android_list_app.apk
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\android_list_app.android_list_app-Signed.apk
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\android-list-app.dll
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\android-list-app.pdb
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\android\bin\android_list_app.android_list_app.apk
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\res\layout\sample_row.xml
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\res\layout\main.xml
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\res\values\strings.xml
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\res\drawable\icon.png
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\R.cs.flag
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\uploadflags.txt
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\android-list-app.dll.mdb
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\android\assets\android-list-app.dll.mdb
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\android-list-app.csprojResolveAssemblyReference.cache
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\res\layout\sample_fragment.xml
