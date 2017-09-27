@@ -31,13 +31,18 @@ namespace android_list_app
         private TextView text2;
         private TextView text3;
         private List<Sample> sampledata;
+        private Sample sItem;
 
-        public void AddData(List<Sample> s)
+
+
+        public void AddData(List<Sample> s, Sample incSample)
         {
             sampledata = s;
+            sItem = incSample;
+           /* text1.Text = incSample.id.ToString();
+            text2.Text = incSample.name;
+            text3.Text = incSample.text1;*/
         }
-
-
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -48,9 +53,13 @@ namespace android_list_app
             text1 = view.FindViewById<TextView>(Resource.Id.textView1);
             text2 = view.FindViewById<TextView>(Resource.Id.textView2);
             text3 = view.FindViewById<TextView>(Resource.Id.textView3);
+            text1.Text = sItem.id.ToString();
+            text2.Text = sItem.name;
+            text3.Text = sItem.text1;
 
 
             return view;
         }
+
     }
 }

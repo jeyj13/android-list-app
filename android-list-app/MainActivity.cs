@@ -45,12 +45,15 @@ namespace android_list_app
         }
         private void list_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
+            int lItem = e.Position;
+            Sample passSample = sampleList.ElementAt(e.Position);
             FragmentTransaction transaction = FragmentManager.BeginTransaction();
             sample_fragment sampleDataPopupDialog = new sample_fragment();
-            sampleDataPopupDialog.AddData(sampleList);
+            
             sampleDataPopupDialog.Show(transaction, "Dialog Fragment");
+            sampleDataPopupDialog.AddData(sampleList, passSample);
 
-           // sampleDataPopupDialog.OnTap += sampleDataPopupDialog_OnTap;
+            // sampleDataPopupDialog.OnTap += sampleDataPopupDialog_OnTap;
         }
     }
 }
