@@ -11,6 +11,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using android_list_app.Resources;
+using Newtonsoft.Json;
 
 namespace android_list_app
 {
@@ -67,6 +68,7 @@ namespace android_list_app
         private void editButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this.Activity, typeof(SampleEditActivity));
+            intent.PutExtra("itemPass", JsonConvert.SerializeObject(sItem));
             StartActivity(intent);
         }
 

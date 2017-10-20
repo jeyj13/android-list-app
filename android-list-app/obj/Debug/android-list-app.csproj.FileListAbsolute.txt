@@ -15,3 +15,6 @@ C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list
 C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\uploadflags.txt
 C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\android-list-app.dll.mdb
 C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\android\assets\android-list-app.dll.mdb
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jey\Documents\Visual Studio 2015\Projects\android-list-app\android-list-app\obj\Debug\res\layout\sampleedit.xml
