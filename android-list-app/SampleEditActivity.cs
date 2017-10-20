@@ -18,7 +18,7 @@ namespace android_list_app
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            SetContentView(Resource.Layout.SampleEdit);
             // Create your application here
         }
     }
