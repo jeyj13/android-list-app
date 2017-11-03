@@ -6,6 +6,7 @@ using android_list_app.Resources;
 using System.IO;
 using System.Linq;
 using Android.Content;
+using Java.Lang;
 
 namespace android_list_app
 {
@@ -21,7 +22,7 @@ namespace android_list_app
         {
             base.OnCreate(bundle);
 
-             sampleList = SampleListFile.LoadList(this);
+             //sampleList = SampleListFile.LoadList(this);
 
             /*sampleList[0].id = 0;
             sampleList[0].name = "name1";
@@ -39,9 +40,22 @@ namespace android_list_app
         {
             base.OnStart();
             Context thisContext = this.ApplicationContext;
+            sampleList = SampleListFile.LoadList(this);
             listView1.Adapter = new sample_adapter(this, sampleList);
 
             // listView1.Adapter = new sample_adapter(this, sampleList);
+        }
+        protected override void OnPause()
+        {
+            base.OnPause();
+            //sampleList = SampleListFile.LoadList(this);
+            SampleListFile.SaveSampleList(this, sampleList);
+        }
+        protected override void OnStop()
+        {
+            base.OnStop();
+           // sampleList = SampleListFile.LoadList(this);
+            SampleListFile.SaveSampleList(this, sampleList);
         }
         private void list_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
@@ -55,6 +69,8 @@ namespace android_list_app
 
             // sampleDataPopupDialog.OnTap += sampleDataPopupDialog_OnTap;
         }
+        
+
     }
 }
 

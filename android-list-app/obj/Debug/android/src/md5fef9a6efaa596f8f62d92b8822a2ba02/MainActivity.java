@@ -12,6 +12,8 @@ public class MainActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onStart:()V:GetOnStartHandler\n" +
+			"n_onPause:()V:GetOnPauseHandler\n" +
+			"n_onStop:()V:GetOnStopHandler\n" +
 			"";
 		mono.android.Runtime.register ("android_list_app.MainActivity, android-list-app, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainActivity.class, __md_methods);
 	}
@@ -39,6 +41,22 @@ public class MainActivity
 	}
 
 	private native void n_onStart ();
+
+
+	public void onPause ()
+	{
+		n_onPause ();
+	}
+
+	private native void n_onPause ();
+
+
+	public void onStop ()
+	{
+		n_onStop ();
+	}
+
+	private native void n_onStop ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
