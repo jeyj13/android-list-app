@@ -19,7 +19,7 @@ public class sample_adapter
 	}
 
 
-	public sample_adapter () throws java.lang.Throwable
+	public sample_adapter ()
 	{
 		super ();
 		if (getClass () == sample_adapter.class)

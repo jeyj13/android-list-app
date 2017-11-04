@@ -26,7 +26,7 @@ namespace android_list_app
     }
     public class sample_fragment : DialogFragment
     {
-        public event EventHandler<OnTapEventArgs> OnTap;
+      //  public event EventHandler<OnTapEventArgs> OnTap;
 
         private TextView text1;
         private TextView text2;

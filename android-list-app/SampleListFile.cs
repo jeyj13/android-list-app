@@ -25,31 +25,18 @@ namespace android_list_app
 
         public static List<Sample> LoadList(Android.Content.Context c) {
             List<Sample> L1 = new List<Sample>();
+            List<Sample> L2 = new List<Sample>();
             AssetManager appAssets = c.Assets;
             dir = Environment.ExternalStorageDirectory.ToString();
             combinedpath = Path.Combine(dir, "UserSampleList.csv");
             try
             {
-               //  if (!File.Exists(combinedpath)){
-                using (Stream file = appAssets.Open("SampleMaster.csv"))
+                if (File.Exists(combinedpath))
                 {
-                   using (StreamReader filein = new StreamReader(file /*File.OpenRead(combinedpath)*/))
+                    //using (Stream file = appAssets.Open("SampleMaster.csv"))
                     {
-                        while (!filein.EndOfStream)
+                        using (StreamReader filein = new StreamReader(/*file*/File.OpenRead(combinedpath)))
                         {
-                            var linein = filein.ReadLine();
-                            var item = linein.Split(',');
-                            L1.Insert(0, new Sample() { id = Convert.ToInt32(item[0]), name = item[1], text1 = item[2] });
-                        }
-                    }
-                }
-                //}
-            //    else
-              //  {
-                   // using (Stream file = appAssets.Open("SampleMaster.csv"))
-                   // {
-               //         using (StreamReader filein = new StreamReader(/*file*/ File.OpenRead(combinedpath)))
-                    /*    {
                             while (!filein.EndOfStream)
                             {
                                 var linein = filein.ReadLine();
@@ -58,8 +45,31 @@ namespace android_list_app
                             }
                         }
                     }
-                }*/
-            } catch (Exception ex)
+                }
+                else
+                {
+                    using (Stream file = appAssets.Open("SampleMaster.csv"))
+                    {
+                        using (StreamReader filein = new StreamReader(file))
+                        {
+                            while (!filein.EndOfStream)
+                            {
+                                var linein = filein.ReadLine();
+                                var item = linein.Split(',');
+                                L2.Insert(0, new Sample() { id = Convert.ToInt32(item[0]), name = item[1], text1 = item[2] });
+                            }
+                            SaveInitialSampleList(c, L2);
+                        }
+                    }
+
+                    /*using (StreamWriter fileWrite = new StreamWriter(File.Create(combinedpath)))
+                    {
+                        fileWrite.Write(L2);
+                    }*/
+
+                }
+
+                } catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
                 Toast.MakeText(Application.Context, "Error loading file", ToastLength.Long).Show();
@@ -83,6 +93,26 @@ namespace android_list_app
 
             int totalLength = output1.Length;
             for(int i = 0; i < totalLength; i++)
+            {
+                csvBuilder.AppendLine(string.Join(delim, output1[i]));
+            }
+            SaveSampleFile(csvBuilder);
+        }
+        public static void SaveInitialSampleList(Android.Content.Context c, List<Sample> sl)
+        {
+
+            StringBuilder csvBuilder = new StringBuilder();
+            string delim = ",";
+            string[][] output1 = new string[sl.Count][];
+
+
+            for (int d = 0; d < sl.Count; d++)
+            {
+                output1[d] = new string[] { sl[d].id.ToString(), sl[d].name, sl[d].text1 };
+            }
+
+            int totalLength = output1.Length;
+            for (int i = 0; i < totalLength; i++)
             {
                 csvBuilder.AppendLine(string.Join(delim, output1[i]));
             }

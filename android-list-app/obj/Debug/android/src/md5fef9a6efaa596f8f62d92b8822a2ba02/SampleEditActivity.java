@@ -16,7 +16,7 @@ public class SampleEditActivity
 	}
 
 
-	public SampleEditActivity () throws java.lang.Throwable
+	public SampleEditActivity ()
 	{
 		super ();
 		if (getClass () == SampleEditActivity.class)
